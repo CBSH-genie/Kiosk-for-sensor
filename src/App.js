@@ -1,27 +1,20 @@
 import React, { useState } from "react";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ReactDOM from "react-dom";
+import Main from "./pages/Main";
 
-function Kiosk() {
-  const [inputText, setInputText] = useState("");
-
-  const handleClick = () => {
-    // logic for processing user input
-  }
+function App() {
 
   return (
-    <div>
-      <h1>Kiosk Page</h1>
-      <input
-        type="text"
-        value={inputText}
-        onChange={(e) => setInputText(e.target.value)}
-      />
-      <button onClick={handleClick}>Submit</button>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='' element={<Main />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
-ReactDOM.render(<Kiosk />, document.getElementById("root"));
+// ReactDOM.render(<Kiosk />, document.getElementById("root"));
 
 
-export default Kiosk;
+export default App;
