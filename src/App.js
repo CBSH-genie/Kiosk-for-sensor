@@ -1,11 +1,27 @@
-function App() {
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+
+function Kiosk() {
+  const [inputText, setInputText] = useState("");
+
+  const handleClick = () => {
+    // logic for processing user input
+  }
+
   return (
-    <div className="App">
-      <h1>충북과학고등학교 센서 키오스크</h1>
-      <h2> TEST2 </h2>
-      <h3> TEST2 </h3>
+    <div>
+      <h1>Kiosk Page</h1>
+      <input
+        type="text"
+        value={inputText}
+        onChange={(e) => setInputText(e.target.value)}
+      />
+      <button onClick={handleClick}>Submit</button>
     </div>
   );
 }
 
-export default App;
+ReactDOM.render(<Kiosk />, document.getElementById("root"));
+
+
+export default Kiosk;
