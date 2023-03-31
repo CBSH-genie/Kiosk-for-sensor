@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function Main() {
+function Finish() {
 
   const [inputText, setInputText] = useState("");
 
@@ -10,7 +10,7 @@ function Main() {
 
   return (
     <div>
-      <h1>Kiosk Main Page</h1>
+      <h1>Kiosk Finish Page</h1>
       <input
         type="text"
         value={inputText}
@@ -21,4 +21,4 @@ function Main() {
   )
 }
 
-export default Main
+export default Finish
