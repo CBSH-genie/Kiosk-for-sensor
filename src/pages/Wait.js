@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Button from '../components/Button';
 
 function Wait() {
 
@@ -13,7 +14,10 @@ function Wait() {
       <h1>CBSH Kiosk</h1>
       <h1>전자/공학</h1>
       <h1>물품 체크기</h1>
-      <button onClick={handleClick}>Submit</button>
+      <Button onClick={handleClick}>
+        <h1>Alt+F4</h1>
+        <h3>시작하기</h3>
+        </Button>
     </div>
   )
 }
