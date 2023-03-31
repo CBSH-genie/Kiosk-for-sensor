@@ -1,13 +1,12 @@
-#include <MFRC522.h>
-#include <MFRC522Extended.h>
-#include <deprecated.h>
-#include <require_cpp11.h>
 
 #include <SPI.h>
 #include <MFRC522.h>   
- 
-#define RST_PIN   9
-#define SS_PIN    10
+ //nano v3
+#define RST_PIN   D9
+#define SS_PIN    D10
+//MOSI -> D11
+//MISO -> D12
+//SCK -> D13
 
 MFRC522 rc522(SS_PIN, RST_PIN);
 
