@@ -10,12 +10,9 @@ function Wait() {
 
   return (
     <div>
-      <h1>Kiosk Wait Page</h1>
-      <input
-        type="text"
-        value={inputText}
-        onChange={(e) => setInputText(e.target.value)}
-      />
+      <h1>CBSH Kiosk</h1>
+      <h1>전자/공학</h1>
+      <h1>물품 체크기</h1>
       <button onClick={handleClick}>Submit</button>
     </div>
   )
