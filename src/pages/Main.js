@@ -1,11 +1,15 @@
 import React, {useState} from 'react'
+import "../App.css"
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
 
   const [inputText, setInputText] = useState("");
 
-  const handleClick = () => {
-    // logic for processing user input
+  const movePage = useNavigate();
+
+  function gohome(){
+    movePage('/');
   }
 
   return (
@@ -16,7 +20,6 @@ function Main() {
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
       />
-      <button onClick={handleClick}>Submit</button>
     </div>
   )
 }

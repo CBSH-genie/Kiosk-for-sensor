@@ -6,6 +6,7 @@ import Certify from "./pages/Certify";
 import Teachermod from "./pages/Teachermod";
 import Finish from "./pages/Finish";
 import Wait from "./pages/Wait";
+import "./App.css"
 
 function App() {
 

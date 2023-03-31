@@ -22,6 +22,11 @@ const VARIANTS = {
     --button-bg-color: #ffc107;
     --button-hover-bg-color: #e0a800;
   `,
+  default: css`
+    --button-color: #ffffff;
+    --button-bg-color: #fd7101;
+    --button-hover-bg-color: #e86700;
+  `
 };
 
 function Button({ disabled, size, variant, children }) {
@@ -47,22 +52,22 @@ const StyledButton = styled.button`
   border: none;
   cursor: pointer;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: var(--button-font-size, 1rem);
-  padding: var(--button-padding, 12px 16px);
-  border-radius: var(--button-radius, 8px);
-  background: var(--button-bg-color, #0d6efd);
+  font-size: var(--button-font-size, rem);
+  padding: var(--button-padding, 5px 100px);
+  border-radius: var(--button-radius, 50px);
+  background: var(--button-bg-color, #fd7101);
   color: var(--button-color, #ffffff);
 
   &:active,
   &:hover,
   &:focus {
-    background: var(--button-hover-bg-color, #025ce2);
+    background: var(--button-hover-bg-color, #e86700);
   }
 
   &:disabled {
     cursor: default;
     opacity: 0.5;
-    background: var(--button-bg-color, #025ce2);
+    background: var(--button-bg-color, #fd7101);
   }
 `;
 
