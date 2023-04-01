@@ -7,7 +7,7 @@ function Wait() {
   const [inputText, setInputText] = useState("");
     return (
       <>
-        <div className="TextBox">
+        <div className="TextBox_white">
           <h1>CBSH Kiosk</h1>
           <h1>전자/공학</h1>
           <h1>물품 체크기</h1>

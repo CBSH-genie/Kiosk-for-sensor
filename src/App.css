@@ -1,7 +1,8 @@
-.TextBox {
+.TextBox_white {
   text-align: center;
   font-size: 30px;
   line-height: normal;
+  color: white;
 }
 
 .Buttons {
