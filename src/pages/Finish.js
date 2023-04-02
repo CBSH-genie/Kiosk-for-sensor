@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import '../App.css'
 
 function Finish() {
 
@@ -9,16 +10,15 @@ function Finish() {
   }
 
   return (
-    <div>
-      <h1>Kiosk Finish Page</h1>
-      <input
-        type="text"
-        value={inputText}
-        onChange={(e) => setInputText(e.target.value)}
-      />
-      <button onClick={handleClick}>Submit</button>
+    <>
+    <div className="TextBox_white">
+      <h1>CBSH Kiosk</h1>
+      <h1>전자/공학</h1>
+      <h1>물품 체크기를</h1>
+      <h1>이용해주셔서 감사합니다.</h1>
     </div>
-  )
+  </>
+)
 }
 
 export default Finish
