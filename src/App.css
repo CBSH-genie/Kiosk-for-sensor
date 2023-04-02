@@ -5,6 +5,13 @@
   color: white;
 }
 
+.TextBox_ending {
+  text-align: center;
+  font-size: 30px;
+  line-height:auto;
+  color: white;
+}
+
 .Buttons {
   text-align: center;
   font-size: 20px;
