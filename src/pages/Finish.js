@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, } from 'react-router-dom';
+import { Link, useNavigate, } from 'react-router-dom';
 import '../App.css'
 import Button from '../components/Button'
 
@@ -11,15 +11,15 @@ function Finish() {
     // logic for processing user input
   }
 
-/*  const history = useHistory;
+  const navigate = useNavigate()
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      history.push('/');
+      navigate("/")
     }, 10000);
 
     return () => clearTimeout(timer);
-  }, [history]); */
+  }, []);
 
   return (
     <>
