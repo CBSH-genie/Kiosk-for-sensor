@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Keypad from "./Keypad";
 
-const Numpad = ({ correctPassword }) => {
+const Numpad = ({ correctPassword = "0000" }) => {
   const [digit1, setDigit1] = useState("");
   const [digit2, setDigit2] = useState("");
   const [digit3, setDigit3] = useState("");
