@@ -11,7 +11,7 @@ function Finish() {
     // logic for processing user input
   }
 
-  const navigate = useNavigate()
+ /* const navigate = useNavigate()
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -19,7 +19,7 @@ function Finish() {
     }, 10000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, []); */
 
   return (
     <>
