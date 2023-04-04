@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import Keypad from "./Keypad";
+import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Numpad = ({ correctPassword = "0000" }) => {
   const [digit1, setDigit1] = useState("");
   const [digit2, setDigit2] = useState("");
   const [digit3, setDigit3] = useState("");
   const [digit4, setDigit4] = useState("");
+
+  const navigate = useNavigate()
 
   const handleDigitPress = (digit) => {
     // If Clear button is clicked
@@ -19,7 +23,7 @@ const Numpad = ({ correctPassword = "0000" }) => {
     else if (digit === "E") {
       const inputPassword = digit1 + digit2 + digit3 + digit4;
       if (inputPassword === correctPassword) {
-        handleNavigation("./Finish");
+        navigate("./Finish");
       } else {
         setDigit1("");
         setDigit2("");
@@ -39,10 +43,9 @@ const Numpad = ({ correctPassword = "0000" }) => {
       }
     }
   };
-
+/*
   const handleNavigation = (path) => {
-    // handle navigation logic here
-  };
+  };*/
 
   return (
     <div>
