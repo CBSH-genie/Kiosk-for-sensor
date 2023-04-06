@@ -1,10 +1,17 @@
-function SelectionBox({ selections, onSelect }) {
+import React from 'react';
+import '../App.css'
+
+function SelectionBox({ selections, onSelect, selected }) {
   return (
-    <div>
-      {selections.map((selection, index) => (
-        <button key={index} onClick={() => onSelect(selection)}>
+    <div className='selection-box'>
+      {selections.map(selection => (
+        <div
+          key={selection}
+          className={`selection-item${selected === selection ? ' selected' : ''}`}
+          onClick={() => onSelect(selection)}
+        >
           {selection}
-        </button>
+        </div>
       ))}
     </div>
   );
