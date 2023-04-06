@@ -1,8 +1,14 @@
 .TextBox_white {
-  text-align: center;
-  font-size: 30px;
-  line-height:20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  font-size: 50px;
+  text-align: center;
 }
 
 .TextBox_ending {
@@ -12,17 +18,19 @@
   color: white;
 }
 
-.Buttons {
-  text-align: center;
-  font-size: 20px;
-  line-height: normal;
-}
-
-button{
+.Buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   border: none;
-  background-color: #fd7101;
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Pappins';
   border-radius: var(--button-radius, 30px);
   text-align: center;
