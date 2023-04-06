@@ -59,7 +59,16 @@
   }
 }
 
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.selection-boxes{
+  display: flex;
+  margin-bottom: 30px;
+}
 
 body {
   background-color: black;
