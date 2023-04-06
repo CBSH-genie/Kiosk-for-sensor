@@ -66,8 +66,18 @@
 }
 
 .selection-boxes{
-  display: flex;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: none;
+  color: white;
+  font-size: 30px;
+  font-family: 'Pappins';
+  border-radius: var(--button-radius, 30px);
+  text-align: center;
+  line-height: normal;
 }
 
 body {

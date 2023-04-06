@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import '../App.css'
 
-import SelectionBox from './SelectionBox'
+import SelectionBox from './SelectionBox';
 import MenuBox from './MenuBox';
 
-const mainSelections = ['음식', '음료'];
+const mainSelections = ['전자', '공학'];
 const subSelections = {
-    음식: ['한식', '일식', '중식', '양식', '패스트푸드'],
-    음료: ['커피', '차', '주스', '기타'],
-  };
+  전자: ['한식', '일식', '중식', '양식', '패스트푸드'],
+  공학: ['커피', '차', '주스', '기타'],
+};
 
 function Main() {
   const [mainSelection, setMainSelection] = useState('');
@@ -27,9 +27,10 @@ function Main() {
 
   return (
     <div className='main-containers'>
-      <h1>Kiosk</h1>
       <div className='selection-boxes'>
         <SelectionBox selections={mainSelections} onSelect={handleMainSelection} />
+      </div>
+      <div className='selection-boxes'>
         {mainSelection && (
           <SelectionBox selections={subSelections[mainSelection]} onSelect={handleSubSelection} />
         )}
